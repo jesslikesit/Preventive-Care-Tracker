@@ -3,10 +3,22 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
-    <meta name="theme-color" content="#0A5C50" />
+
+    <!-- browser chrome / Android status bar -->
+    <meta name="theme-color" content="#FBD1E1" />
+
+    <!-- Android + desktop Chrome home-screen icon comes from the manifest -->
     <link rel="manifest" href="./manifest.webmanifest" />
-    <link rel="icon" href="./icon-192.png" />
-    <link rel="apple-touch-icon" href="./icon-192.png" />
+    <link rel="icon" type="image/png" sizes="192x192" href="./icon-192.png" />
+    <link rel="icon" type="image/png" sizes="512x512" href="./icon-512.png" />
+
+    <!-- iOS ignores the manifest and uses these instead -->
+    <link rel="apple-touch-icon" sizes="180x180" href="./apple-touch-icon.png" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+    <!-- this is the name shown under the icon on an iPhone home screen -->
+    <meta name="apple-mobile-web-app-title" content="PrevCare" />
+
     <title>Preventive Care Tracker</title>
   </head>
   <body>

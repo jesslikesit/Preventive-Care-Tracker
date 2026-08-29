@@ -48,6 +48,19 @@ This is the step that makes the APK build.
 
 The build starts immediately.
 
+## About the app icon
+
+Your custom icon is already wired in:
+- public/icon-192.png and public/icon-512.png — used for "Add to Home Screen" if
+  you ever open this as a plain website instead of the APK.
+- resources/icon.png — a 1024x1024 master. The workflow uses this to generate the
+  actual Android launcher icon (all densities) automatically on every build, with
+  your logo's pink (#FBD1E1) as the icon background.
+
+To change the icon again later: replace resources/icon.png (and ideally the two
+public/icon-*.png to match) with a new square image, commit, and the next build
+picks it up — nothing else to edit.
+
 ## Step 4 — Optional but recommended: .gitignore
 
 Repeat step 3 with the filename `.gitignore` and the contents of
