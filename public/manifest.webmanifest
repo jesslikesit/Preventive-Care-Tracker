@@ -1,6 +1,6 @@
 {
   "name": "Preventive Care Tracker",
-  "short_name": "PrevCare",
+  "short_name": "Preventive Care",
   "description": "USPSTF A/B screenings and labs, plus ACIP vaccines, filtered to the individual patient.",
   "start_url": "./",
   "scope": "./",
