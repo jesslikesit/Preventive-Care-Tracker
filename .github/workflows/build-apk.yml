@@ -39,7 +39,7 @@ jobs:
           npx cap sync android
 
       - name: Generate app icon from resources/icon.png
-        run: npx @capacitor/assets generate --android --iconBackgroundColor '#FBD1E1' --iconBackgroundColorDark '#FBD1E1'
+        run: npx @capacitor/assets generate --android --iconBackgroundColor '#FBD1E1' --iconBackgroundColorDark '#FBD1E1' --splashBackgroundColor '#FBD1E1'
 
       - name: Build debug APK
         run: cd android && chmod +x gradlew && ./gradlew assembleDebug
